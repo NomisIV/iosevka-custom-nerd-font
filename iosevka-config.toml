@@ -1,0 +1,74 @@
+# New config can be generated at
+# https://typeof.net/Iosevka/customizer
+[buildPlans.iosevka-custom]
+family = "Iosevka Custom"
+spacing = "term"
+serifs = "sans"
+
+[buildPlans.iosevka-custom.variants.design]
+turn-v = "curly"
+capital-g = "toothless-corner"
+capital-i = "short-serifed"
+capital-k = "curly"
+capital-r = "curly"
+capital-y = "curly"
+a = "doublestorey-toothless-corner"
+b = "toothless-corner"
+d = "toothless-corner"
+f = "flat-hook"
+g = "opendoublestorey"
+i = "serifed-tailed"
+j = "flat-hook-serifed"
+k = "curly"
+l = "serifed-tailed"
+m = "earless-rounded-double-arch-shortleg"
+n = "earless-corner-straight"
+p = "earless-corner"
+q = "earless-corner"
+r = "earless-corner"
+t = "flat-hook"
+u = "toothless-corner"
+v = "curly"
+w = "curly"
+x = "curly"
+y = "curly"
+z = "standard"
+lambda = "curly"
+four = "closed"
+six = "open-contour"
+seven = "noserif"
+nine = "open-contour"
+asterisk = "low"
+underscore = "above-baseline"
+caret = "low"
+paren = "large-contour"
+brace = "straight"
+percent = "dots"
+bar = "force-upright"
+lig-ltgteq = "slanted"
+ascii-single-quote = "straight"
+ascii-grave = "straight"
+
+[buildPlans.iosevka-custom.ligations]
+inherits = "dlig"
+
+[buildPlans.iosevka-custom.weights.regular]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.iosevka-custom.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.iosevka-custom.weights.heavy]
+shape = 900
+menu = 900
+css = 900
+
+# This is neccessary to prevent all widths from being compiled
+[buildPlans.iosevka-custom.widths.normal]
+shape = 500
+menu = 5
+css = "normal"

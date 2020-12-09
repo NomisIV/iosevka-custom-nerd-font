@@ -10,6 +10,7 @@ OUTPUT_FOLDER=~/.local/share/fonts/
 
 # Copy the files from nerd-fonts/patched-fonts
 build: $(NERD_FONTS_OUTPUT)/%.ttf
+	tar -czf $(NERD_FONTS_OUTPUT).tar.gz $(NERD_FONTS_OUTPUT)
 
 install: build
 	cp -u $(NERD_FONTS_OUTPUT)/* $(OUTPUT_FOLDER)

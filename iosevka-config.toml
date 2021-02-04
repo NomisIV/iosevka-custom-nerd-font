@@ -1,5 +1,3 @@
-# New config can be generated at
-# https://typeof.net/Iosevka/customizer
 [buildPlans.iosevka-custom]
 family = "Iosevka Custom"
 spacing = "term"
@@ -43,32 +41,64 @@ six = "open-contour"
 nine = "open-contour"
 asterisk = "low"
 underscore = "above-baseline"
-caret = "high"
-paren = "normal"
 brace = "straight"
-at = "threefold"
 percent = "dots"
-bar = "natural-slope"
 lig-ltgteq = "slanted"
 
 [buildPlans.iosevka-custom.variants.italic]
+capital-a = "curly-motion-serifed"
+capital-b = "standard-unilateral-motion-serifed"
+capital-c = "unilateral-inward-serifed"
+capital-d = "standard-unilateral-motion-serifed"
+capital-g = "toothed-inward-serifed-hooked"
+capital-h = "motion-serifed"
+capital-j = "serifed-both-sides"
+capital-k = "curly-motion-serifed"
+capital-l = "motion-serifed"
+capital-m = "hanging-motion-serifed"
+capital-n = "motion-serifed"
+capital-p = "open-motion-serifed"
+capital-r = "straight-open-motion-serifed"
+capital-s = "unilateral-inward-serifed"
+capital-u = "toothless-corner-unilateral-motion-serifed"
+capital-v = "curly-motion-serifed"
+capital-w = "curly-motion-serifed"
+capital-x = "curly-motion-serifed"
+capital-y = "curly-motion-serifed"
+capital-z = "curly-with-horizontal-crossbar"
+a = "double-storey-motion-serifed"
+b = "toothless-corner-motion-serifed"
+c = "unilateral-inward-serifed"
+d = "toothed-motion-serifed"
 f = "flat-hook-tailed"
-l = "serifed-flat-tailed"
+g = "double-storey"
+h = "straight-motion-serifed"
+k = "cursive-motion-serifed"
+m = "short-leg-motion-serifed"
+n = "straight-motion-serifed"
+p = "motion-serifed"
+q = "motion-serifed-tailed"
+r = "compact-serifed"
+s = "unilateral-inward-serifed"
+u = "motion-serifed"
+v = "curly-motion-serifed"
+w = "curly-motion-serifed"
+x = "curly-motion-serifed"
+y = "straight-turn-motion-serifed"
+z = "curly-top-motion-serifed"
+latn-epsilon = "inward-serifed"
+latn-reverse-epsilon = "inward-serifed"
+cyrl-capital-u = "curly-turn"
 
 [buildPlans.iosevka-custom.weights.regular]
-shape = 500
-menu = 500
-css = 500
+shape = 400
+menu = 400
+css = 400
 
 [buildPlans.iosevka-custom.weights.bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.iosevka-custom.weights.heavy]
-shape = 900
-menu = 900
-css = 900
 
 [buildPlans.iosevka-custom.slopes]
 upright = "normal"

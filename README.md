@@ -8,8 +8,7 @@
 
 ## Configuration
 
-- iosevka-config.toml
-- Makefile
+`iosevka-config.toml` can be generated at https://typeof.net/Iosevka/customizer
 
 ## Building and installing
 

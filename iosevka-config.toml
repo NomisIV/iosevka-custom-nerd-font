@@ -6,22 +6,25 @@ spacing = "term"
 serifs = "sans"
 
 [buildPlans.iosevka-custom.variants.design]
-turn-v = "curly"
-capital-g = "toothless-corner"
-capital-i = "short-serifed"
+capital-a = "curly"
+capital-g = "toothless-corner-serifless-hooked"
 capital-k = "curly"
 capital-r = "curly"
+capital-v = "curly"
+capital-w = "curly"
+capital-x = "curly"
 capital-y = "curly"
-a = "doublestorey-toothless-corner"
+capital-z = "curly"
+a = "double-storey-toothless-corner"
 b = "toothless-corner"
 d = "toothless-corner"
 f = "flat-hook"
-g = "opendoublestorey"
+g = "double-storey-open"
 i = "serifed-tailed"
 j = "flat-hook-serifed"
 k = "curly"
 l = "serifed-tailed"
-m = "earless-rounded-double-arch-shortleg"
+m = "earless-corner-double-arch-short-leg"
 n = "earless-corner-straight"
 p = "earless-corner"
 q = "earless-corner"
@@ -32,25 +35,25 @@ v = "curly"
 w = "curly"
 x = "curly"
 y = "curly"
-z = "standard"
+z = "curly"
+turn-v = "curly"
 lambda = "curly"
-four = "closed"
+cyrl-capital-u = "curly"
 six = "open-contour"
-seven = "noserif"
 nine = "open-contour"
 asterisk = "low"
 underscore = "above-baseline"
-caret = "low"
-paren = "large-contour"
+caret = "high"
+paren = "normal"
 brace = "straight"
+at = "threefold"
 percent = "dots"
-bar = "force-upright"
+bar = "natural-slope"
 lig-ltgteq = "slanted"
-ascii-single-quote = "straight"
-ascii-grave = "straight"
 
-[buildPlans.iosevka-custom.ligations]
-inherits = "dlig"
+[buildPlans.iosevka-custom.variants.italic]
+f = "flat-hook-tailed"
+l = "serifed-flat-tailed"
 
 [buildPlans.iosevka-custom.weights.regular]
 shape = 500
@@ -66,6 +69,10 @@ css = 700
 shape = 900
 menu = 900
 css = 900
+
+[buildPlans.iosevka-custom.slopes]
+upright = "normal"
+italic = "italic"
 
 # This is neccessary to prevent all widths from being compiled
 [buildPlans.iosevka-custom.widths.normal]

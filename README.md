@@ -15,3 +15,8 @@
 
 - `make`
 - `make install`
+
+## Using Nix
+
+- `nix-shell`
+- `make`

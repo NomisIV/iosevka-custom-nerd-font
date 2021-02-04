@@ -23,10 +23,10 @@ $(NERD_FONTS_OUTPUT).zip: $(NERD_FONTS_OUTPUT)/*.ttf
 	zip -ru $(NERD_FONTS_OUTPUT).zip $(NERD_FONTS_OUTPUT)
 
 clean:
-	rm -f $(IOSEVKA_OUTPUT) $(NERD_FONTS_OUTPUT)
+	rm -rf $(IOSEVKA_OUTPUT) $(NERD_FONTS_OUTPUT)
 
 # Patch Iosevka
-$(NERD_FONTS_OUTPUT)/*.ttf: $(NERD_FONTS_FOLDER)/font-patcher $(IOSEVKA_OUTPUT)/*.ttf
+$(NERD_FONTS_OUTPUT)/%.ttf: $(NERD_FONTS_FOLDER)/font-patcher $(IOSEVKA_OUTPUT)/*.ttf
 	mkdir -p $(NERD_FONTS_OUTPUT)
 	find $(IOSEVKA_OUTPUT)/*.ttf -exec $< -c -o $(NERD_FONTS_OUTPUT) {} \;
 
@@ -35,7 +35,7 @@ $(NERD_FONTS_FOLDER)/font-patcher:
 	curl -L "https://github.com/ryanoasis/nerd-fonts/archive/$(NERD_FONTS_VERSION).tar.gz" | tar xz
 
 # Build Iosevka
-$(IOSEVKA_OUTPUT)/*.ttf: $(IOSEVKA_FOLDER)/package.json $(IOSEVKA_FOLDER)/private-build-plans.toml
+$(IOSEVKA_OUTPUT)/%.ttf: $(IOSEVKA_FOLDER)/package.json $(IOSEVKA_FOLDER)/private-build-plans.toml
 	cd $(IOSEVKA_FOLDER) && npm run build -- ttf::iosevka-custom
 
 # Download Iosevka
@@ -45,5 +45,5 @@ $(IOSEVKA_FOLDER)/package.json:
 
 # Configure Iosevka
 $(IOSEVKA_FOLDER)/private-build-plans.toml: iosevka-config.toml
-	cp iosevka-config.toml $@
+	cp $< $@
 

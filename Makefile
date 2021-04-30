@@ -1,6 +1,6 @@
 .PHONY: build install zip clean
 
-IOSEVKA_VERSION=5.0.0-beta.3
+IOSEVKA_VERSION=6.0.1
 IOSEVKA_FOLDER=Iosevka-$(IOSEVKA_VERSION)
 IOSEVKA_OUTPUT=$(IOSEVKA_FOLDER)/dist/iosevka-custom/ttf
 

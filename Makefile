@@ -23,10 +23,16 @@ $(NERD_FONTS_OUTPUT).zip: $(NERD_FONTS_OUTPUT)/*.ttf
 	zip -r $(NERD_FONTS_OUTPUT).zip $(NERD_FONTS_OUTPUT)
 
 clean:
-	rm -rf $(IOSEVKA_OUTPUT)/* $(NERD_FONTS_OUTPUT)/*
+	rm -rf \
+		$(IOSEVKA_OUTPUT) \
+		$(NERD_FONTS_OUTPUT) \
+		$(NERD_FONTS_OUTPUT).zip \
+		$(IOSEVKA_FOLDER) \
+		$(NERD_FONTS_FOLDER)
 
 # Patch Iosevka
 $(NERD_FONTS_OUTPUT)/*.ttf: $(NERD_FONTS_FOLDER)/font-patcher $(IOSEVKA_OUTPUT)/*.ttf
+	mkdir -p $(NERD_FONTS_OUTPUT)
 	find $(IOSEVKA_OUTPUT)/*.ttf -exec $< -c -o $(NERD_FONTS_OUTPUT) {} \;
 
 # Download Nerd Fonts
